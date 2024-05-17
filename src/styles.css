@@ -1,22 +1,36 @@
-@media (min-width: 768px) {
+@media (min-width: 992px) {
     .sidebar .offcanvas-lg {
         position: -webkit-sticky;
         position: sticky;
         top: 48px;
     }
-
-    .navbar-search {
-        display: block;
-    }
 }
 
-@media (max-width: 768px) {
+
+@media (max-width: 992px) {
     .sidebar-active {
-        display: none;
+        position: fixed;
+        right: -350px;
+        top: 64px;
+        width: 350px;
+        transition: 0.4s ease-in-out;
+        height: 100vh;
     }
+
+    menu-icon {
+        display: block;
+        width: 100%;
+    }
+
 
     .chart-responsive {
         padding: 15px;
+    }
+
+    .mobile-menu {
+        position: fixed;
+        right: 0;
+        transition: 0.4s ease-in-out;
     }
 }
 

@@ -1,13 +1,14 @@
 <div
-  class="offcanvas-md offcanvas-end bg-body-tertiary h-100"
+  class="offcanvas-end bg-body-tertiary h-100 sidebar-active z-index-1000"
+  [class.mobile-menu]="isVisible"
   tabindex="-1"
   id="sidebarMenu"
   aria-labelledby="sidebarMenuLabel"
 >
-  <ul class="nav flex-column mb col-md-3 col-lg-2 me=0 px-1 py-2">
+  <ul class="nav flex-column mb-auto px-1 me-0 py-2">
     <li class="nav-item">
       <a
-        class="nav-link d-flex align-items-center gap-2 active"
+        class="nav-link d-flex align-items-center gap-2"
         aria-current="page"
         href="#"
       >
